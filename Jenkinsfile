@@ -56,6 +56,7 @@ pipeline {
         branch 'master'
       }
       steps {
+        sh 'echo'
         sh "git tag rectangle-${env.MAJOR_VERSION}.${BUILD_NUMBER}"
         sh "git push origin rectangle-${env.MAJOR_VERSION}.${BUILD_NUMBER}"
       }
